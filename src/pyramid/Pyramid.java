@@ -9,7 +9,7 @@ package pyramid;
  *
  * @author USER
  */
-public class Pyramid {
+/*public class Pyramid {
     public static void main(String args[]) {
 		int i,j,k;
 		int n=25;
@@ -38,3 +38,52 @@ public class Pyramid {
 		}
     }
 }
+*/
+/*public class Pyramid {
+    public static void main(String args[]) {
+		int i,k;
+		int n=25;
+                    for(i = 0;i<n;i++) {
+                            for(k=0;k<n-i;k++){
+                                    if(k<i)
+                                        System.out.print(" ");
+                                    else
+                                        System.out.print("*");
+                            }
+                            
+                           
+			System.out.println("");
+                     
+                    }
+                     
+                    }
+    }
+
+*/
+public class Pyramid {
+    public static void main(String args[]) {
+        int i,j, n=25, s=1;
+        for(i=1;i<=25;i++){
+            for(j=1;j<s;j++) {
+                System.out.print(" ");
+            }
+            for(j=1;j<=n;j++)  {
+                System.out.print("*");    
+            }
+            
+            System.out.println();
+            if(i<=12){
+                n = n-2;
+                s = s+1;
+            }
+            else{
+                n = n+2;
+                s = s-1;
+            }
+        }
+    }
+}
+                    
+		
+    
+
